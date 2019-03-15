@@ -18,7 +18,6 @@ const ProfileLoadable = Loadable({
 const Routes = () => (
   <React.Fragment>
     <Route path="/" exact component={HomeLoadable} />
-    <Route path="/tabs/" component={TabsLoadable} />
     <Route path="/profile/" component={ProfileLoadable} />
   </React.Fragment>
 );

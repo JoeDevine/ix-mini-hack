@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "../atoms";
 
 const NavContainer = styled("nav")`
   padding: ${props => props.theme.spacing.medium}
@@ -23,10 +22,10 @@ const Nav = () => (
     <h1>Nav component</h1>
     <NavLinkList>
       <li>
-        <Link href="/">Home</Link>
+        <a href="/">Home</a>
       </li>
       <li>
-        <Link href="/profile">Profile</Link>
+        <a href="/profile">Profile</a>
       </li>
     </NavLinkList>
   </NavContainer>
