@@ -26,10 +26,7 @@ const Nav = () => (
         <Link href="/">Home</Link>
       </li>
       <li>
-        <Link href="/tabs">Tabs demo</Link>
-      </li>
-      <li>
-        <Link href="/some-page">Some page</Link>
+        <Link href="/profile">Profile</Link>
       </li>
     </NavLinkList>
   </NavContainer>

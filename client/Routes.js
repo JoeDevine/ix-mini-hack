@@ -9,15 +9,9 @@ const HomeLoadable = Loadable({
   loading: Loading
 });
 
-const TabsLoadable = Loadable({
+const ProfileLoadable = Loadable({
   loader: () =>
-    import("./components/pages/tabs" /* webpackChunkName: 'page__tabs' */),
-  loading: Loading
-});
-
-const SomePageLoadable = Loadable({
-  loader: () =>
-    import("./components/pages/some-page" /* webpackChunkName: 'page__some-page' */),
+    import("./components/pages/profile" /* webpackChunkName: 'page__profiles' */),
   loading: Loading
 });
 
@@ -25,7 +19,7 @@ const Routes = () => (
   <React.Fragment>
     <Route path="/" exact component={HomeLoadable} />
     <Route path="/tabs/" component={TabsLoadable} />
-    <Route path="/some-page/" component={SomePageLoadable} />
+    <Route path="/profile/" component={ProfileLoadable} />
   </React.Fragment>
 );
 

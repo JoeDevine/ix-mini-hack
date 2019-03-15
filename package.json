@@ -7,7 +7,7 @@
     "build": "npm run build:client && npm run build:server",
     "build:start": "npm run build && npm start",
     "start": "NODE_ENV=production node ./dist/server.bundle.js",
-    "dev": "NODE_ENV=development npm run build && webpack-dashboard -- node ./dist/server.bundle.js",
+    "dev": "NODE_ENV=development npm run build && node ./dist/server.bundle.js",
     "test:unit": "jest ./client ./server --coverage",
     "lint": "eslint ./client ./server"
   },
